@@ -1,0 +1,21 @@
+.jumbotron {
+  text-align: center;
+  background-color: #FFB233;
+}
+
+#ping-pong {
+  padding-left: 100px;
+  background-color: lightgrey;
+
+}
+
+#result {
+  background-color: #e9ecef;
+}
+
+.sidebar {
+  float: left;
+  background-color: lightgreen;
+  margin: 2px;
+  border: 10px;
+  border-color: black;
