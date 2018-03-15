@@ -23,6 +23,7 @@ h3 {
 
 #result {
   background-color: lightgrey;
+  display: none;
 }
 
 .sidebar {
