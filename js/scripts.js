@@ -11,7 +11,6 @@ $(document).ready(function(){
 
 // business logic
 var pingPong = function(number) {
-  var list = []
   for (var number = 0; number <= pingPongInput; number += 1) {
     if ((number % 3 === 0) && (number % 15 === 0)) {
       return "pingpong";
