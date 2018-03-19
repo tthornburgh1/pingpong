@@ -1,18 +1,26 @@
-// business logic
+//business logic
 var pingPong = function(number) {
-  if ((number % 3 === 0) && (number % 15 == 0)) {
-    return pingpong;
-  } else if (number % 3 === 0) {
-    return ping;
-  } else {(number % 5 ===0)
-    return pong;
+var userNumberArray = [];
+ for (var index = 1; index <= number; index += 1) {
+   if ((number % 3 === 0) && (number % 15 === 0)) {
+     userNumberArray.push("pingpong");
+   } else if (number % 3 === 0) {
+     userNumberArray.push("ping");
+   } else if (number % 5 === 0) {
+     userNumberArray.push("pong");
+   } else {
+     userNumberArray.push(index);
+   };
+ };
+	return userNumberArray;
 };
 
 // user interface logic
 $(document).ready(function() {
-  $("form#ping-pong").submit(function(event) {
+  $("#ping-pong form").submit(function(event)) {
     event.preventDefault();
-    for (var index = 1; index <= 100000000000000; index += 1)
-    var result = pingPong(pingpong);
-    $("#result").text(result);
+    var number = $("input#number").val();
+	  var result = pingPong(pingpong);
+    $("#result").show(result);
+  });
 });
