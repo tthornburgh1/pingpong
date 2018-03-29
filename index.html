@@ -21,24 +21,25 @@
         <p>Java</p>
     </div>
 
-      <form id="ping-pong">
-        <h2>Let's play!</h2>
-        <h3>Rules:</h3>
-        <p>Ping Pong will count up to your number with the following exceptions:</p>
-        <ol>
-          <li>Numbers divisible by 3 will become &quot;ping&quot;</li>
-          <li>Numbers divisible by 5 will become &quot;pong&quot;</li>
-          <li>Numbers divisible by 3 and 5 will become &quot;pingpong&quot;</li>
-        </ol>
-        <div class="form-group">
-          <label for="yourNumber">Enter your number here:</label>
-          <input id="yourNumber" type="text">
-        </div>
+    <form id="ping-pong">
+      <h2>Let's play!</h2>
+      <h3>Rules:</h3>
+      <p>Ping Pong will count up to your number with the following exceptions:</p>
+      <ol>
+        <li>Numbers divisible by 3 will become &quot;ping&quot;</li>
+        <li>Numbers divisible by 5 will become &quot;pong&quot;</li>
+        <li>Numbers divisible by 3 and 5 will become &quot;pingpong&quot;</li>
+      </ol>
+      <div class="form-group">
+        <label for="number">Enter your number here:</label>
+        <input id="number" type="text">
+      </div>
 
-        <button type="submit" class="btn btn-success">Ping Pong!</button>
-      </form>
-    <div id="results">
-      <ul class="none" id="result"><span class="showNumber"></span></ul>
+      <button type="submit" class="btn btn-success">Ping Pong!</button>
+    </form>
+
+    <div id="number">
+      <ul id="finalResult"><span class="showNumber"></span></ul>
     </div>
   </body>
 </html>
